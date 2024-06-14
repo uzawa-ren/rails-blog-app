@@ -1,2 +1,7 @@
-<h1 style='font-family: "inter"'>Hello, Rails!</h1>
+<h1 style='font-family: "inter"'>Articles:</h1>
 
+<ul style='font-family: "inter"'>
+  <% @articles.each do |article| %>
+    <li> <%= article.title %> </li>
+  <% end %>
+</ul>
