@@ -1,7 +1,9 @@
 <h1 style='font-family: "inter"'>Articles:</h1>
 
-<ul style='font-family: "inter"'>
+<ul style='font-family: "inter", "noto sans jp"'>
   <% @articles.each do |article| %>
     <li><%= link_to article.title, article %></li>
   <% end %>
 </ul>
+
+<%= link_to "New Article", new_article_path %>
